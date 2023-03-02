@@ -2,7 +2,7 @@ print(f"Подсчтет дней в году")
 
 god = float(input("Введите год: ")) 
 Number = 0
-if god % 4 == 0:
+if (god % 4 == 0 and god % 100 != 0) or god % 400 == 0:
     Mas = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     for kol in range(len(Mas)):
         for Quantity in range(Mas[kol]):
